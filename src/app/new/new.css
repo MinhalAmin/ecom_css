@@ -1,0 +1,24 @@
+/* New.css */
+
+/* Grid container to create the grid layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 1rem;
+    justify-items: center;
+  }
+  
+  /* Media query for larger screens */
+  @media (min-width: 768px) {
+    .grid-container {
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+    }
+  }
+  
+  /* Styling for each image */
+  .image {
+    padding-top: 1rem;
+  }
+  
